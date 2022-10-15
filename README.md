@@ -33,14 +33,14 @@
 |Advanced DeFi Scrutiny|Possible Price Manipulation Attack                     |가격 조작이 가능한 경우                                                                   |
 |Advanced DeFi Scrutiny|Emergency Mechanism                                    |비상 메커니즘 동작 방식                                                                   |
 |Advanced DeFi Scrutiny|Authentication Management                              |인증을 올바르게 수행하는지                                                                  |
-|Advanced DeFi Scrutiny|Operation Trails & Event Generation                    |?                                                                               |
+|Advanced DeFi Scrutiny|Operation Trails & Event Generation                    |이벤트 생성을 올바르게 하는지                                                                               |
 |Advanced DeFi Scrutiny|Functionality Checks                                   |정확한 동작을 수행하는지                                                                   |
 |Advanced DeFi Scrutiny|Oracle Security                                        |Oracle에 보안 문제가 없는지                                                              |
 |Advanced DeFi Scrutiny|Frontend-Contract Integration                          |frontend와 contract 사이의 통합이 이루어 지는지                                              |
 |Advanced DeFi Scrutiny|Access Control & Authorization                         |접근 제어 및 owner 설정이 올바른지                                                          |
 |Advanced DeFi Scrutiny|Deployment Consistency                                 |배포 일관성                                                                          |
 |Advanced DeFi Scrutiny|Digtial Asset Escrow                                   |디지털 자산 중개 거래에 보안 문제가 없는지                                                        |
-|Advanced DeFi Scrutiny|Business Logic Review                                  |?                                                                               |
+|Advanced DeFi Scrutiny|Business Logic Review                                  |비즈니스 로직 버그 체크                                                                               |
 |Token   |Bound check                                            |amount = 0일 때 처리되는지                                                             |
 |Token   |parameter check                                        |Approve, Transfer에 msg.sender와 from을 구분하여 사용했는지                                 |
 |Token   |Incorrect asset’s value                                |잘못된 asset value 계산 (e.g. iBUSD vs BUSD)                                         |
