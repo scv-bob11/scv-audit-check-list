@@ -14,19 +14,19 @@
 |Basic Code Bugs|Entropy Illusion (Lack of Randomness)                  |랜덤값의 낮은 Entropy                                                                 |
 |Basic Code Bugs|Gasless send                                           |가스가 필요 없는 send                                                                  |
 |Basic Code Bugs|use Untrusted Libraries                                |신뢰할 수 없는 Library 사용                                                             |
-|Basic Code Bugs|Unauthorized Self-Destruct                             |인증이 안된 Self-Destruct 호출                                                         |
+|Basic Code Bugs|Unauthorized Self-Destruct                             |인증 되지 않은 Self-Destruct 호출                                                         |
 |Basic Code Bugs|Money-Giving bug                                       |임의의 돈을 인출하거나, 전송할 수 있는 버그                                                       |
 |Basic Code Bugs|send Instead Of Transfer                               |Transfer 대신 send를 사용한 경우                                                        |
 |Basic Code Bugs|Revert DoS                                             |Revert로 인한 DoS                                                                  |
 |Basic Code Bugs|Re-entrancy                                            |재진입 공격                                                                          |
 |Basic Code Bugs|Deprecated Uses                                        |사용되지 않는 변수, 함수                                                                  |
 |Basic Code Bugs|Redundant Fallback Function                            |불필요한 Fallback 함수                                                                |
-|Basic Code Bugs|Blackhole                                              |contract 내 ETH 영구 lock, out안됨!                                                  |
+|Basic Code Bugs|Blackhole                                              |contract 내 자금 영구 lock                                                  |
 |Basic Code Bugs|Ownership Takeover                                     |contract나 함수의 Owner가 잘못 설정되는 경우                                                 |
 |Basic Code Bugs|Transcation Ordering Dependence                        |Transcation 순서에 의존하는 로직                                                         |
-|Basic Code Bugs|Unchecked External Call                                |검증하지 않은 External call                                                           |
+|Basic Code Bugs|Unchecked External Call                                |검증되지 않은 External call                                                           |
 |Basic Code Bugs|Costly Loop                                            |Loop의 가스 값이 과도한 경우                                                              |
-|Basic Code Bugs|Overflows & Underflows                                 |오버 플로우 & 언더 플로우 (체크 안해서 revert 발생 하는 경우)                                        |
+|Basic Code Bugs|Overflows & Underflows                                 |오버플로우 & 언더플로우 (체크 안해서 revert 발생 하는 경우)                                        |
 |Basic Code Bugs|use predictable Random Variables                       |예측 가능한 랜덤 변수 사용                                                                 |
 |Basic Code Bugs|Constructor Mismatch                                   |Constructor가 잘못 된 경우                                                            |
 |Semantic Consistency Checks|Semantic consistency Checks                            |코드 일관성                                                                          |
@@ -45,13 +45,13 @@
 |Token   |parameter check                                        |Approve, Transfer에 msg.sender와 from을 구분하여 사용했는지                                 |
 |Token   |Incorrect asset’s value                                |잘못된 asset value 계산 (e.g. iBUSD vs BUSD)                                         |
 |Token   |Compation of Deflationary Token                        |Deflationary Tokens의 확장성을 고려했는지                                                 |
-|Token   |Functionality check                                    |정확한 동작을 수행 하는지 (Burn을 하지 않음, Transfer 실패 등 )                                    |
+|Token   |Functionality check                                    |정확한 동작을 수행하는지 (Burn을 하지 않음, Transfer 실패 등 )                                    |
 |Token   |Mint security                                          |minting에 취약점이 있는지                                                               |
-|Token   |ERC 20 Idiosyncrasies Handling                         |ERC-20의 특이 사항 handling                                                          |
+|Token   |ERC 20 Idiosyncrasies Handling                         |ERC-20의 특이사항 handling                                                          |
 |NFT Security|sequential ID                                          |NFT의 metadata가 이미 다 공개되어있는 경우 e.g.) ID가 순차적이라면 예측이 가능함.                         |
 |NFT Security|Duplicated Item                                        |같은 ID의 NTF가 생성되는 경우                                                             |
-|Signature & hash|Unchecked verification of sign                         |서명의 유효성을 검증하지 않는 경우                                                             |
-|Signature & hash|Sign without private key                               |서명에 개인키가 포함되어 있지 않는 경우                                                          |
+|Signature & hash|Unchecked verification of sign                         |서명의 유효성을 검증하지 않은 경우                                                             |
+|Signature & hash|Sign without private key                               |서명에 개인키가 포함되어 있지 않은 경우                                                          |
 |Signature & hash|can make another vaild sign with vaild Sign            |유효한 서명으로 다른 유효한 서명을 생성 하는 경우                                                    |
 |Signature & hash|Sign without nonce                                     |서명에 nonce가 포함되어있지 않는 경우                                                         |
 |Signature & hash|Use Same K                                             |서명에 같은 K 가 사용되는 경우                                                              |
