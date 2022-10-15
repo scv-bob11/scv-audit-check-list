@@ -55,5 +55,5 @@
 |Signature & hash|can make another vaild sign with vaild Sign            |유효한 서명으로 다른 유효한 서명을 생성 하는 경우                                                    |
 |Signature & hash|Sign without nonce                                     |서명에 nonce가 포함되어있지 않은 경우                                                         |
 |Signature & hash|Use Same K                                             |서명에 같은 K 가 사용되는 경우                                                              |
-|Signature & hash|Hash Collisions With Multiple Variable Length Arguments|서명에 가변 길이 변수가 들어가 충돌이 발생 할 수 있는 경우                                              |
+|Signature & hash|Hash Collisions With Multiple Variable Length Arguments|서명에 가변 길이 변수가 들어가 충돌이 발생할 수 있는 경우                                              |
 |Signature & hash|Signatures Replay                                      |Replay attack이 가능한지                                                             |
